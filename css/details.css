@@ -1,0 +1,298 @@
+.content1{
+	width: 1150px;
+	/* background: blue; */
+	margin: 30px auto;
+    color: #666;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 20px 33px 20px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, .1);
+}
+.details{
+	display: flex;
+	flex-direction: row-reverse;
+}
+/* 信息详情左侧 */
+.d-left{
+	width: 700px;
+	margin: 70px 0px 70px -110px;
+
+}
+.d-left .name{
+	font-size: 26px;
+    line-height: 40px;
+	border-bottom: 1px solid #eee;
+}
+.d-left .name p{
+	font-size: 14px;
+}
+.address{
+	border-bottom: 1px solid #eee;
+}
+.address p{
+	margin: 10px 0;
+}
+.tags li{
+	float: left;
+    margin:10px 16px 10px 0;
+    line-height: 17px;
+}
+.tags li img{
+	width: 24px;
+	height: 24px;
+	display: block;
+	margin: 5px auto;
+}
+/* 信息详情右侧 */
+.d-right{
+	margin-right: 200px;
+	width: 480px;
+  	height: 400px;
+  	display: flex;
+  	position: relative;
+}
+
+
+.d-right .middle {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.d-right .middle .layer {
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: move;
+}
+
+.d-right .large {
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 412px;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  display: none;
+  background-image: url("../images/1.jpg@600w_600h_1l");
+  background-size: 800px 800px;
+}
+
+.d-right .middle img {
+  width: 100%;
+  height: 100%;
+}
+
+.d-right .small {
+  width: 80px;
+  height: 400px;
+}
+
+.d-right .small ul li {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 11px;
+  margin-left: 12px;
+  border: 2px solid transparent;
+}
+
+.d-right .small ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.d-right .small ul li.active,
+.d-right .small ul li:hover {
+  border-color: #27BA9B;
+}
+
+/* 商家团购及优惠 */
+.btm-cont{
+  padding-top: 30px;
+}
+.group{
+  margin-top: 10px;
+    margin-bottom: 40px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 16px 20px 20px 20px;
+}
+.group h4{
+  margin-bottom: 15px;
+}
+.group .one{
+  margin-top: 10px;
+  display: flex;
+  border-bottom:1px solid #eee ;
+}
+.group .info{
+  margin: 10px 10px 0;
+  font-size: 14px;
+  
+}
+.group .info img{
+  width: 16px;
+  height: 16px;
+  margin:0 0 0 2px;
+  vertical-align: middle;
+}
+.group .info .price{
+  margin-top: 5px;
+  font-size: 12px;
+  color: orange;
+}
+.group .info .price span{
+  margin-left: 5px;
+  color: #aaa;
+}
+.group .info .price b{
+  font-size: 24px;
+}
+.group .fr{
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  background-color: #ff9900;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  display: inline-block;
+    margin-top: 30px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+.vouchers {
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.vouchers h4 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.vouchers .one .price {
+  float: left;
+  width: 140px;
+  height: 89px;
+  background-image: url(https://s3plus.meituan.net/static-prod01/com.sankuai.web.meishife.pcweb-files/f1a6e6a/assets/74f33f3125908576.png);
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 11px 10px 0 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.vouchers .one .price span {
+  display: block;
+  font-size: 30px;
+  color: #ff6600;
+  border-bottom: 1px dashed #ccc;
+  line-height: 36px;
+  margin-bottom: 9px;
+  padding-bottom: 8px;
+}
+
+.vouchers .one .name p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 1px;
+}
+.vouchers .one .name {
+  float: left;
+  width: 1000px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+.vouchers .one .fr{
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  background-color: #ff9900;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  float: right;
+}
+
+
+/* 推荐菜 */
+.recommend .cont {
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 33px 32px 26px 32px;
+  border-radius: 4px;
+}
+.btm-cont {
+  color: #222;
+  padding-top: 40px;
+}
+.recommend ul {
+  width: 1100px;
+}
+.recommend ul li {
+  float: left;
+  width: 162px;
+  margin-right: 20px;
+}
+.recommend ul li .pic {
+  position: relative;
+  height: 130px;
+  border-radius: 4px;
+}
+.recommend img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.recommend ul li .pic .desc {
+  font-size: 14px;
+  width: 100%;
+  background: rgba(0, 0, 0, .3);
+  padding: 8px 0;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.clear:after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.recommend .list {
+  padding: 25px 0 0 6px;
+}
+.recommend .list span {
+  display: block;
+  float: left;
+  margin: 0 20px 19px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+}
+.footer-center {
+  width: 1090px;
+  height: 450px;
+  margin: 0 auto;
+  border: 1px solid #e5e5e5;
+}

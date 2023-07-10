@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单页</title>
+    <meta name="description" content="北京食力派网精选北京美食餐厅,酒店预订,电影票,旅游景点,外卖订餐,北京团购信息,您可查询商家评价店铺信息。北京生活,下载食力派官方APP ,吃喝玩乐1折起。">
+    <meta name="keywords" content="北京美食,北京酒店,北京团购">
+    <!-- 字体图标 -->
+    <link rel="stylesheet" type="text/css" href="./font/icomoon/style.css">
+    <!-- 基础样式 -->
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <!-- 头部公共文件样式 -->
+    <link rel="stylesheet" type="text/css" href="./css/com_header.css">
+    <!-- 内容页面样式 -->
+    <link rel="stylesheet" type="text/css" href="./css/evaluate.css">
+    <!-- 底部公共样式 -->
+    <link rel="stylesheet" type="text/css" href="./css/com_footer.css">
+    <link href="https://cdn.bootcss.com/font-awesome/6.0.0/css/all.css" rel="stylesheet">
+    <script>
+        if(localStorage.getItem('uname')==null){
+            //跳转到我的订单页面
+        window.location.href="./index.html";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 头部导航条 -->
+    <div class="nav">
+        <div class="nav-center">
+            <!-- 导航条左侧 位置登录注册 -->
+            <div class="nav-center-left">
+                <!-- 字体图标类名的使用 -->
+                <span class="icon-location"></span>
+                <a href="#">
+                    北京
+                </a>
+                <a href="./city.html">切换城市</a>
+                <a href="#">
+                    [门头沟区 大厂回族 自治县廊坊]
+                </a>
+
+            </div>
+            <!-- 导航条右侧 我的食力派 手机APP 商家中心 食力派规则 网站导航 -->
+            <div class="nav-center-right">
+                <ul id="dropdown">
+                    <li>
+                        <a href="#" id="myconts">我的食力派</a>
+                        <dl class="displaynone mygroup">
+                            <dd>
+                                <a href="./evaluate.html">我的订单</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我的收藏</a>
+                            </dd>
+                            <dd>
+                                <a href="#">抵用券</a>
+                            </dd>
+                            <dd>
+                                <a href="#">账户设置</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#" class="myconts">手机APP</a>
+                        <dl></dl>
+                    </li>
+                    <li>
+                        <a href="#" id="scenter">商家中心</a>
+                        <dl class="displaynone store-center">
+                            <dd>
+                                <a href="#">食力派餐饮商户中心</a>
+                            </dd>
+                            <dd>
+                                <a href="#">登录商家中心</a>
+                            </dd>
+                            <dd>
+                                <a href="#">食力派智能收银</a>
+                            </dd>
+                            <dd>
+                                <a href="#">我想合作</a>
+                            </dd>
+                            <dd>
+                                <a href="#">手机免费开店</a>
+                            </dd>
+                            <dd>
+                                <a href="#">到店综合业务招募</a>
+                            </dd>
+                            <dd>
+                                <a href="#">餐饮合作社招募</a>
+                            </dd>
+                            <dd>
+                                <a href="#">商家申请开票</a>
+                            </dd>
+                            <dd>
+                                <a href="#">免费合作食力派排队</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#" id="grouprule">食力派规则</a>
+                        <dl class="displaynone rulecenter">
+                            <dd>
+                                <a href="#">规则中心</a>
+                            </dd>
+                            <dd>
+                                <a href="#">规则目录</a>
+                            </dd>
+                            <dd>
+                                <a href="#">规则评议院</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="#" id="groupnav">网站导航</a>
+                        <dl class="displaynone groupnavlist">
+                            <dd>
+                                <div>
+                                    <a href="#">酒店旅游</a>
+                                </div>
+                                <span>国际机票</span>
+                                <span>火车票</span>
+                                <span>民宿</span>
+                                <span>经济型酒店</span>
+                                <span>主题酒店</span>
+                                <span>商务酒店</span>
+                                <span>公寓</span>
+                                <span>豪华酒店</span>
+                                <span>客栈</span>
+                                <span>青年旅社</span>
+                                <span>度假酒店</span>
+                                <span>别墅</span>
+                                <span>农家院</span>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a href="#">吃美食</a>
+                                </div>
+                                <span>烤鱼</span>
+                                <span>特色小吃</span>
+                                <span>烧烤</span>
+                                <span>自助餐</span>
+                                <span>火锅</span>
+                                <span>代金券</span>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a href="#">看电影</a>
+                                </div>
+                                <span>热映电影</span>
+                                <span>热门影院</span>
+                                <span>热映电影口碑</span>
+                                <span>最受期待电影</span>
+                                <span>国内票房榜</span>
+                                <span>北美票房榜</span>
+                                <span>电影排行榜</span>
+                            </dd>
+                            <dd>
+                                <div>
+                                    <a href="#">手机应用</a>
+                                </div>
+                                
+                                <span>
+                                    <img src="./images/162c3308d9622f6d9cfaa49e60be4dca8573.png" alt="食力派" />
+                                </span>
+                                <span>
+                                    <img src="./images/dianping.png" alt="食力派" />
+                                </span>
+                                <span>
+                                    <img src="./images/maoyan.png" alt="食力派" />
+                                </span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索区域 -->
+    <div class="header">
+        <div class="header-center">
+            <!-- logo区域 -->
+            <div class="header-center-left">
+                <h1>
+                    <a href="index.html" title="食力派购">
+                        <img src="./images/食物力派logo.png" />食力派购
+                    </a>
+                </h1>
+            </div>
+            <!-- 搜索区域 -->
+            <div class="header-center-center">
+                <input type="text" placeholder="搜索商家或地点">
+                <button>
+                    <span class="icon-search"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 详细信息 -->
+    <div class="evaluate-content">
+
+    </div>
+    <!-- 评论 -->
+    <div id="popup">
+        <div class="popup-component poi-deal-popup">
+            <div class="overlay">
+
+            </div>
+            <div class="content">
+                <div class="poi-little">
+                    <div class="close">
+
+                    </div>
+                    <!-- 内容 -->
+                    <h2 class="marktitle"></h2>
+                    <div class="mark">
+                        <span>评分</span>
+                        <!-- 绘制星星 -->
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span id="score"></span>
+                    </div>
+
+                    <div class="wrapper" style="margin-top: 40px;">
+                        <i class="avatar"></i>
+                        <textarea id="tx" placeholder="亲，可以从菜品口味、环境、服务等方面分享用餐感受哦~" rows="2" maxlength="200"></textarea>
+                        <button class="wrapperbtn">发布</button>
+                    </div>
+                    <div class="wrapper">
+                        <span class="total">0/200字</span>
+                    </div>
+                    <div class="list">
+                        <div class="item" style="display: none;">
+                            <i class="avatar"></i>
+                            <div class="info2">
+                                <p class="name"></p>
+                                <p class="starsxing"></p>
+                                <p class="text"></p>
+                                <p class="time"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 底部链接-->
+    <div class="footer">
+        <div class="footer-center" style="width: 1150px;;">
+            <div class="footer-center-content">
+                <ul>
+                    <b>用户帮助</b>
+                    <li>申请退款</li>
+                    <li>常见问题</li>
+                    <li>用户协议</li>
+                    <li>隐私政策</li>
+                    <li>反诈骗公告</li>
+                    <li>消费者权益保障</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>商家合作</b>
+                    <li>美食商家入驻(非外卖)</li>
+                    <li>食力派外卖开店</li>
+                    <li>食力派收银官网</li>
+                    <li>食力派配送合作申请</li>
+                    <li>食力派餐饮学院</li>
+                    <li>酒店商家入驻</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>合作商招募</b>
+                    <li>食力派外卖合作商招募</li>
+                    <li>到店餐饮合作商招募</li>
+                    <li>到店综合业务合作商招募</li>
+                    <li>食力派联盟</li>
+                    <li>食力派收银招募线上分销商</li>
+                    <li>食力派收银合作商招募</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>关注食力派</b>
+                    <li>食力派新浪微博</li>
+                    <li>常见问题</li>
+                    <li>用户协议</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>消费者服务热线</b>
+                    <li>外卖消费者：10109777</li>
+                    <li>猫眼消费者：10105335</li>
+                    <li>其他消费者：10107888</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>用户帮助</b>
+                    <li>申请退款</li>
+                    <li>常见问题</li>
+                    <li>用户协议</li>
+                    <li>隐私政策</li>
+                    <li>反诈骗公告</li>
+                    <li>消费者权益保障</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>食力派服务</b>
+                    <li>食力派外卖</li>
+                    <li>食力派酒店</li>
+                    <li>猫眼电影</li>
+                    <li>食力派配送</li>
+                    <li>食力派云</li>
+                    <li>大众点评</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>商家合作</b>
+                    <li>境内度假商家入驻</li>
+                    <li>综合商家入驻</li>
+                    <li>食力派民宿房东</li>
+                    <li>商家入驻</li>
+                    <li>商家开票</li>
+                    <li>申请食力派智能收银机</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>食力派规则</b>
+                    <li>规则中心</li>
+                    <li>规则评议院</li>
+                    <li>规则目录</li>
+                </ul>
+            </div>
+            <div class="footer-center-content">
+                <ul>
+                    <b>投诉举报专区</b>
+                    <li>违法和不良信息举报电话：4006018900</li>
+                    <li>举报邮箱：tousujubao@meituan.com</li>
+                    <li>网上有害信息举报</li>
+                    <li>商家自助入驻食力派入口</li>
+                    <li>供应商注册入口</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 关于网站的介绍 -->
+    <div class="info">
+        <div class="info-center">
+
+            Copyright © 2023 Food Power Faction 
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/evaluate.js"></script>
+</body>
+
+</html>

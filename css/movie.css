@@ -1,0 +1,113 @@
+.film {
+    margin: 20px auto;
+    width: 1050px;
+    border: 1px solid rgb(235, 229, 229);
+    height: 550px;
+}
+
+.filmLeft {
+    width: 510px;
+    height: 460px;
+    float: left;
+    margin: 20px;
+}
+
+.filmLeft h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.filmLeft ul {
+    list-style: none;
+}
+
+.filmRight {
+    width: 500px;
+    height: 550px;
+    float: left;
+    background-color: bisque;
+}
+
+.rightTopleft {
+    float: left;
+    margin: 20px 15px 5px 10px;
+}
+
+.rightTopRight {
+    float: left;
+    margin: 0px 0px 5px 5px
+}
+
+.rightBootom {
+    clear: both;
+    margin: 0px 10px;
+}
+
+.rightBootom p {
+    line-height: 12px;
+}
+
+
+.seat {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: bisque;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.seatNotice {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px 10px;
+    background-color: bisque;
+    list-style: none;
+    margin-left: 50px;
+}
+
+.notice {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.seatSpace {
+    background: url('../images/bg.png') no-repeat 1px -29px;
+}
+
+.seatActive {
+    background: url('../images/bg.png') 1px 0px;
+}
+
+.seatNoUse {
+    background: url('../images/bg.png') 1px -56px;
+}
+
+.noSeat {
+    background: url('../images/bg.png') 1px -84px;
+}
+
+
+
+.rightTopRight{
+    margin-top: 18px;
+}
+.rightTopRight p{
+    margin-bottom: 15px;
+}
+.rightBootom p{
+    margin: 20px 0;
+}
+
+
+
+.btn {
+    margin: 15px 150px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(68, 168, 135);
+    color: white;
+    cursor: pointer;
+}

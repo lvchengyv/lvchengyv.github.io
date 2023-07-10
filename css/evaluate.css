@@ -1,0 +1,291 @@
+.evaluate-content {
+    width: 1130px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+.evaluate-content>h2 {
+    color: #aaa;
+    margin-left: 10px;
+}
+
+.evaluate-detail {
+    border: 1px solid #fff;
+    padding: 15px 15px 15px 20px;
+    border-radius: 2%;
+    background-color: #fff;
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, .1);
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.evaluate-top {
+    overflow: hidden;
+}
+
+.evaluate-top img {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.evaluate-top h4 {
+    float: left;
+    margin-top: 5px;
+}
+
+.evaluate-top span {
+    float: right;
+    margin-top: 5px;
+    color: #999;
+    margin-right: 30px;
+}
+
+.evaluate-middle {
+    margin-top: 10px;
+    overflow: hidden;
+    color: #999;
+}
+
+.evaluate-middle img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+.evaluate-middle p:nth-child(2) {
+    margin: 30px 0 10px 0;
+}
+
+.evaluate-middle p:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.evaluate-footer {
+    float: right;
+}
+
+.fr {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #ff9900;
+    text-align: center;
+    line-height: 40px;
+    color: #ff9900;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+
+/* 评论 */
+#popup {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: .26rem;
+    transform: translateZ(0);
+    display: none;
+}
+
+.popup-component .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+}
+
+.poi-deal-popup .content {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    margin: 86px 0 10px 0;
+}
+
+.content {
+    width: 1190px;
+    margin: auto;
+}
+
+.popup-component .content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.poi-little {
+    width: 710px;
+    padding: 0 80px 0 80px;
+    margin: auto;
+    overflow-y: scroll;
+    height: 100%;
+    color: #666;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.poi-little .close {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/关闭.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.wrapper {
+    min-width: 400px;
+    max-width: 800px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(../images/avatar11.jpg) no-repeat center / cover;
+    margin-right: 20px;
+}
+
+.wrapper textarea {
+    outline: none;
+    border-color: transparent;
+    resize: none;
+    background: #f5f5f5;
+    border-radius: 4px;
+    flex: 1;
+    padding: 10px;
+    transition: all 0.5s;
+    height: 30px;
+}
+
+.wrapper textarea:focus {
+    border-color: #e4e4e4;
+    background: #fff;
+    height: 50px;
+}
+
+.wrapper button {
+    background: #00aeec;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.wrapper .total {
+    margin-right: 80px;
+    color: #999;
+    margin-top: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.list {
+    min-width: 400px;
+    max-width: 800px;
+    display: flex;
+}
+
+.list .item {
+    width: 100%;
+    display: flex;
+}
+
+.list .item .info2 {
+    flex: 1;
+    border-bottom: 1px dashed #e4e4e4;
+    padding-bottom: 10px;
+    position: relative;
+}
+.list .item .info2 .starsxing {
+    position: absolute;
+    top:0px;
+    right: 20px;
+    font-size: 14px;
+    color: #1e90ff;
+}
+.list .item p {
+    margin: 0;
+}
+
+.list .item .name {
+    color: #FB7299;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list .item .text {
+    color: #333;
+    padding: 10px 0;
+}
+
+.list .item .time {
+    color: #999;
+    font-size: 12px;
+}
+
+/* 星星 */
+.marktitle{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 80px;
+}
+.mark{
+    margin-top: 60px;
+    margin-left: 5px;
+    display: flex;
+}
+.mark span:nth-child(1){
+    display: inline;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+/* 控制星星大小 */
+.stars {
+    font-size: 30px;
+}
+
+.stars i {
+    /* 设置填充背景 */
+    --v: 0;
+    background: linear-gradient(90deg, yellow calc(var(--v) * 1%), transparent 0%);
+    /* 使用文字进行背景裁剪 */
+    -webkit-background-clip: text;
+    color: transparent;
+    /* 给星星加个边框 */
+    -webkit-text-stroke: 1px #1e90ff;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+#score {
+    margin-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-size: 35px;
+    margin-left: 20px;
+    color: #1e90ff;
+    width: 100px;
+}
